@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/netblix/static/css/main.b63d6b81.css",
-    "main.js": "/netblix/static/js/main.66f3e7f9.js",
-    "static/media/netflix-logo.png": "/netblix/static/media/netflix-logo.e615b40377e7d85b660c.png",
-    "index.html": "/netblix/index.html",
-    "main.b63d6b81.css.map": "/netblix/static/css/main.b63d6b81.css.map",
-    "main.66f3e7f9.js.map": "/netblix/static/js/main.66f3e7f9.js.map"
+    "main.css": "/Netblix/static/css/main.b63d6b81.css",
+    "main.js": "/Netblix/static/js/main.5b2309cf.js",
+    "static/media/netflix-logo.png": "/Netblix/static/media/netflix-logo.e615b40377e7d85b660c.png",
+    "index.html": "/Netblix/index.html",
+    "main.b63d6b81.css.map": "/Netblix/static/css/main.b63d6b81.css.map",
+    "main.5b2309cf.js.map": "/Netblix/static/js/main.5b2309cf.js.map"
   },
   "entrypoints": [
     "static/css/main.b63d6b81.css",
-    "static/js/main.66f3e7f9.js"
+    "static/js/main.5b2309cf.js"
   ]
 }
