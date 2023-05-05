@@ -2,7 +2,7 @@
     "name": "netblix",
     "version": "0.1.0",
     "private": false,
-    "homepage": "http://KohseyPower.github.io/netblix",
+    "homepage": "http://KohseyPower.github.io/Netblix",
     "dependencies": {
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^13.4.0",
