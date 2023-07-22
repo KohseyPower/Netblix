@@ -1,9 +1,15 @@
+:root {
+    --nav-background: #282c34;
+    --font-color: rgba(229, 229, 229, 0.8);
+    --font-color-hover: rgba(179, 179, 179, 0.65);
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #282c34;
-    color: white;
+    background-color: var(--nav-background);
+    color: var(--font-color);
     padding: 0 20px;
     height: var(--navbar-height);
 }
@@ -18,9 +24,10 @@ nav {
     width: 6rem;
     height: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     display: block;
     overflow: hidden;
+    margin-left: 1rem;
 }
 
 .netblix-logo {
@@ -36,4 +43,29 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
+}
+
+.section-li-balise {
+    color: var(--font-color);
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.section-a-balise {
+    text-decoration: none;
+    color: var(--font-color);
+    transition: color 0.3s ease;
+}
+
+.section-a-balise:active {
+    color: none;
+    text-decoration: none;
+    cursor: default;
+}
+
+.section-a-balise:visited {
+    color: none;
+}
+
+.section-a-balise:hover {
+    color: var(--font-color-hover);
 }

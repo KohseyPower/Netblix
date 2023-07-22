@@ -9,20 +9,21 @@ export default function Navigation() {
                     <img class="netblix-logo" src={netblixLogo} alt="react logo" />
                 </div>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">TV Shows</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">New & Popular</a></li>
-                    <li><a href="#">My List</a></li>
-                    <li><a href="#">Browse by Languages</a></li>
+                    <li className="section-li-balise"><a className="section-a-balise" href="#">Home</a></li>
+                    <li className="section-li-balise"><a className="section-a-balise" href="#">TV Shows</a></li>
+                    <li className="section-li-balise"><a className="section-a-balise" href="#">Movies</a></li>
+                    <li className="section-li-balise"><a className="section-a-balise" href="#">New & Popular</a></li>
+                    <li className="section-li-balise"><a className="section-a-balise" href="#">My List</a></li>
+                    <li className="section-li-balise"><a className="section-a-balise" href="#">Browse by Languages</a></li>
                 </ul>
             </div>
             <div class="left-nav">
                 <ul>
-                    <li><a href="#">search</a></li>
-                    <li><a href="#">notifications</a></li>
-                    <li><a href="#">account</a><a href="#">triangle</a></li>
+                    <li className="section-li-balise"><a className="section-a-balise" href="#">search</a></li>
+                    <li className="section-li-balise"><a className="section-a-balise" href="#">notifications</a></li>
+                    <li className="section-li-balise"><a className="section-a-balise" href="#">account</a><a href="#" className="section-a-balise">triangle</a></li>
                 </ul>
             </div>
-        </nav>);
+        </nav>
+    );
 }
