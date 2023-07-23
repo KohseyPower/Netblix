@@ -2,6 +2,7 @@
     --nav-background: #282c34;
     --font-color: rgba(229, 229, 229, 0.8);
     --font-color-hover: rgba(179, 179, 179, 0.65);
+    --navbar-height: 4.2rem;
 }
 
 nav {
