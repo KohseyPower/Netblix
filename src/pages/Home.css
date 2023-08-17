@@ -1,0 +1,9 @@
+.main-img-container {
+    width:100%;
+    
+}
+
+.main-img-anounce {
+    object-fit: cover;
+    width:100%;
+}

@@ -1,7 +1,7 @@
 :root {
-    --nav-background: #282c34;
-    --font-color: rgba(229, 229, 229, 0.8);
-    --font-color-hover: rgba(179, 179, 179, 0.65);
+    --nav-background: #121315;
+    --font-color: rgba(248, 247, 247, 0.8);
+    --font-color-hover: rgba(189, 189, 189, 0.65);
     --navbar-height: 4.2rem;
 }
 
@@ -51,22 +51,22 @@ nav ul {
     margin: 0 0.5rem 0 0.5rem;
 }
 
-.section-a-balise {
+.inner-link-balise{
     text-decoration: none;
     color: var(--font-color);
     transition: color 0.3s ease;
 }
 
-.section-a-balise:active {
+.inner-link-balise:active {
     color: none;
     text-decoration: none;
     cursor: default;
 }
 
-.section-a-balise:visited {
+.inner-link-balise:visited {
     color: none;
 }
 
-.section-a-balise:hover {
+.inner-link-balise:hover {
     color: var(--font-color-hover);
 }

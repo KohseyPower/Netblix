@@ -10,19 +10,19 @@ export default function Navigation() {
                     <img class="netblix-logo" src={netblixLogo} alt="react logo" />
                 </div>
                 <ul>
-                    <li className="section-li-balise"><Link to="/">Home</Link></li>
-                    <li className="section-li-balise"><Link to="/tvshows">TV Shows</Link></li>
-                    <li className="section-li-balise"><Link to="/movies">Movies</Link></li>
-                    <li className="section-li-balise"><a className="section-a-balise" href="#">New & Popular</a></li>
-                    <li className="section-li-balise"><a className="section-a-balise" href="#">My List</a></li>
-                    <li className="section-li-balise"><a className="section-a-balise" href="#">Browse by Languages</a></li>
+                    <li className="section-li-balise"><Link to="/"><div class="inner-link-balise">Home</div></Link></li>
+                    <li className="section-li-balise"><Link to="/tvshows"><div class="inner-link-balise">TV Shows</div></Link></li>
+                    <li className="section-li-balise"><Link to="/movies"><div class="inner-link-balise">Movies</div></Link></li>
+                    <li className="section-li-balise"><a className="section-a-balise" href={null}>New & Popular</a></li>
+                    <li className="section-li-balise"><a className="section-a-balise" href={null}>My List</a></li>
+                    <li className="section-li-balise"><a className="section-a-balise" href={null}>Browse by Languages</a></li>
                 </ul>
             </div>
             <div class="left-nav">
                 <ul>
-                    <li className="section-li-balise"><a className="section-a-balise" href="#">search</a></li>
-                    <li className="section-li-balise"><a className="section-a-balise" href="#">notifications</a></li>
-                    <li className="section-li-balise"><a className="section-a-balise" href="#">account</a><a href="#" className="section-a-balise">triangle</a></li>
+                    <li className="section-li-balise"><a className="section-a-balise" href={null}>search</a></li>
+                    <li className="section-li-balise"><a className="section-a-balise" href={null}>notifications</a></li>
+                    <li className="section-li-balise"><a className="section-a-balise" href={null}>account</a><a href={null} className="section-a-balise">triangle</a></li>
                 </ul>
             </div>
         </nav>
