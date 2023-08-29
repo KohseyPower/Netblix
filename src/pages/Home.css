@@ -1,9 +1,88 @@
-.main-img-container {
-    width:100%;
-    
+.main-container {
+    width: 100%;
+}
+
+.background-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/home-main-image.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .main-img-anounce {
-    object-fit: cover;
-    width:100%;
+    display: none;
+}
+
+.main-text-container {
+    position: absolute;
+    top: 65%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+
+.title-main-text-container {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.title-main-text-container :nth-child(n) {
+    margin: 0.5rem;
+}
+
+.top10-svg {
+    height: 5rem;
+    width: 5rem;
+}
+
+.title-main-text {
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    font-size: 40px;
+}
+
+
+/* .short-desc-container {
+    width: 1400px;
+    height: 60px;
+} */
+
+.short-desc {
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.main-text-button {
+    height: 3.4rem;
+    width: 12rem;
+    margin: 0.6rem;
+    border: white;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container :nth-child(n) {
+    margin: 0.3rem;
+}
+
+.play-button {
+    background-color: white;
+    font-size: 25px;
+}
+
+.more-info-button {
+    background-color: rgba(156, 149, 149, 0.651);
+    color: white;
+    font-size: 25px;
 }
