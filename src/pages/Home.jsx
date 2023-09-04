@@ -1,9 +1,10 @@
 import "./Home.css";
 import mainAnounce from "../img/home-main-image.webp";
+import Carousel from "../components/Carousel";
 
 export default function Home() {
     return (
-
+    <>
         <main>
             <div className="main-container">
                 <div className="background-container">
@@ -37,5 +38,7 @@ export default function Home() {
                 </div>
             </div>
         </main>
+        <Carousel title='New Releases'/>
+    </>
     )
 }
