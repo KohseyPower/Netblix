@@ -8,6 +8,22 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.row-content {
+    animation: fade 1s ease-in-out;
 }
 
 .row-content :nth-child(n) {
@@ -16,27 +32,24 @@
 }
 
 .scroll-btn {
-    position: absolute;
+    position: relative;
     color: #fff;
     text-decoration: none;
     font-size: 6em;
     background: rgb(0, 0, 0);
     width: 80px;
+    height: 100%;
     padding: 20px;
     text-align: center;
     z-index: 1;
 }
 
 .scroll-btn:nth-of-type(1) {
-    top: 100%;
-    bottom: 0;
-    left: 0;
+    left: 82px;
     background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 .scroll-btn:nth-of-type(2) {
-    top: 0;
-    bottom: 0;
-    right: 0;
+    right: 82px;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 }
