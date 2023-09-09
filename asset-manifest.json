@@ -1,14 +1,30 @@
 {
   "files": {
-    "main.css": "/Netblix/static/css/main.b63d6b81.css",
-    "main.js": "/Netblix/static/js/main.5b2309cf.js",
+    "main.css": "/Netblix/static/css/main.fca0f3fb.css",
+    "main.js": "/Netblix/static/js/main.a61d7f7c.js",
+    "static/media/home-main-image.webp": "/Netblix/static/media/home-main-image.b4136d4195bb67a8cf89.webp",
+    "static/media/new_releases_carousel-img1.jpg": "/Netblix/static/media/new_releases_carousel-img1.fd0977dcfa4fda3ad1db.jpg",
+    "static/media/new_releases_carousel-img2.jpg": "/Netblix/static/media/new_releases_carousel-img2.dda50c3d826db6690930.jpg",
+    "static/media/new_releases_carousel-img13.jpg": "/Netblix/static/media/new_releases_carousel-img13.dfa1a259b4980e869d83.jpg",
+    "static/media/new_releases_carousel-img4.jpg": "/Netblix/static/media/new_releases_carousel-img4.3ae71fd78e3c6a106ba0.jpg",
+    "static/media/new_releases_carousel-img5.jpg": "/Netblix/static/media/new_releases_carousel-img5.b9098edc0a6f2c806e81.jpg",
+    "static/media/new_releases_carousel-img7.jpg": "/Netblix/static/media/new_releases_carousel-img7.0b7f0e4f59e22fbe6ed3.jpg",
+    "static/media/new_releases_carousel-img6.jpg": "/Netblix/static/media/new_releases_carousel-img6.b43a85e52fc3e92e29f2.jpg",
+    "static/media/new_releases_carousel-img3.jpg": "/Netblix/static/media/new_releases_carousel-img3.f7b3661d63a173a685cf.jpg",
+    "static/media/new_releases_carousel-img12.jpg": "/Netblix/static/media/new_releases_carousel-img12.b25f0c38f9e78c77f853.jpg",
+    "static/media/new_releases_carousel-img11.jpg": "/Netblix/static/media/new_releases_carousel-img11.f33be404604af67ec1cb.jpg",
+    "static/media/new_releases_carousel-img15.jpg": "/Netblix/static/media/new_releases_carousel-img15.282ccdf888f02419a0a8.jpg",
+    "static/media/new_releases_carousel-img10.jpg": "/Netblix/static/media/new_releases_carousel-img10.2ebabf75d2c1471bcf2a.jpg",
+    "static/media/new_releases_carousel-img8.jpg": "/Netblix/static/media/new_releases_carousel-img8.21da614637796c21ad68.jpg",
+    "static/media/new_releases_carousel-img9.jpg": "/Netblix/static/media/new_releases_carousel-img9.3cf05afed47d09c72b3a.jpg",
+    "static/media/new_releases_carousel-img14.jpg": "/Netblix/static/media/new_releases_carousel-img14.88501a4145aa7cbc4454.jpg",
     "static/media/netflix-logo.png": "/Netblix/static/media/netflix-logo.e615b40377e7d85b660c.png",
     "index.html": "/Netblix/index.html",
-    "main.b63d6b81.css.map": "/Netblix/static/css/main.b63d6b81.css.map",
-    "main.5b2309cf.js.map": "/Netblix/static/js/main.5b2309cf.js.map"
+    "main.fca0f3fb.css.map": "/Netblix/static/css/main.fca0f3fb.css.map",
+    "main.a61d7f7c.js.map": "/Netblix/static/js/main.a61d7f7c.js.map"
   },
   "entrypoints": [
-    "static/css/main.b63d6b81.css",
-    "static/js/main.5b2309cf.js"
+    "static/css/main.fca0f3fb.css",
+    "static/js/main.a61d7f7c.js"
   ]
 }
