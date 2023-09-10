@@ -3,6 +3,7 @@
     grid-template-columns: repeat(3, 100%);
     overflow: hidden;
     scroll-behavior: smooth;
+    /* width: 100vw; */
 }
 
 .row-content {
@@ -28,7 +29,7 @@
 }
 
 .row-content :nth-child(n) {
-    margin: 0.05rem;
+    margin-right: 0.05rem;
     border-radius: 5px;
 }
 
@@ -39,7 +40,6 @@
     font-size: 6em;
     background: rgb(0, 0, 0);
     width: 80px;
-    height: 100%;
     padding: 20px;
     text-align: center;
     z-index: 1;
@@ -53,4 +53,9 @@
 .scroll-btn:nth-of-type(2) {
     right: 82px;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.item>img {
+    width: 16.66666666666667vw;
+    height: 100%;
 }
