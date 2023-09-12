@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Netblix/static/css/main.fca0f3fb.css",
-    "main.js": "/Netblix/static/js/main.a61d7f7c.js",
+    "main.css": "/Netblix/static/css/main.c2925775.css",
+    "main.js": "/Netblix/static/js/main.0e6ffcb4.js",
     "static/media/home-main-image.webp": "/Netblix/static/media/home-main-image.b4136d4195bb67a8cf89.webp",
     "static/media/new_releases_carousel-img1.jpg": "/Netblix/static/media/new_releases_carousel-img1.fd0977dcfa4fda3ad1db.jpg",
     "static/media/new_releases_carousel-img2.jpg": "/Netblix/static/media/new_releases_carousel-img2.dda50c3d826db6690930.jpg",
@@ -20,11 +20,11 @@
     "static/media/new_releases_carousel-img14.jpg": "/Netblix/static/media/new_releases_carousel-img14.88501a4145aa7cbc4454.jpg",
     "static/media/netflix-logo.png": "/Netblix/static/media/netflix-logo.e615b40377e7d85b660c.png",
     "index.html": "/Netblix/index.html",
-    "main.fca0f3fb.css.map": "/Netblix/static/css/main.fca0f3fb.css.map",
-    "main.a61d7f7c.js.map": "/Netblix/static/js/main.a61d7f7c.js.map"
+    "main.c2925775.css.map": "/Netblix/static/css/main.c2925775.css.map",
+    "main.0e6ffcb4.js.map": "/Netblix/static/js/main.0e6ffcb4.js.map"
   },
   "entrypoints": [
-    "static/css/main.fca0f3fb.css",
-    "static/js/main.a61d7f7c.js"
+    "static/css/main.c2925775.css",
+    "static/js/main.0e6ffcb4.js"
   ]
 }
