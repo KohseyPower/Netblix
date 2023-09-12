@@ -12,7 +12,7 @@ function App() {
         </style>
         <Navigation />
         <Routes>
-            <Route path="/" element={< Home />} />
+            <Route path="/Netblix" element={< Home />} />
             <Route path="/tvshows" element={< TVShows />} />
             <Route path="/movies" element={< Movies />} />
         </Routes> </>
