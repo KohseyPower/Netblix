@@ -40,6 +40,7 @@ export default function Carousel(props) {
 
     const itemRef = useRef(null);
     const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+    const [slideMargin, setSlideMargin] = useState(0);
 
     const handleResize = () => {
         if (itemRef.current) {
@@ -58,54 +59,62 @@ export default function Carousel(props) {
         };
     }, []);
 
+    function updateCarouselOnRight(e) {
+        // console.log(e.target.parentElement.parentElement.parentElement);
+        setSlideMargin(slideMargin-30);  
+        e.target.parentElement.parentElement.style.transform = "translateX("+ slideMargin+ "vw)";
+    }
+
     return (
         <>
-            <h2>{props.title}</h2>
-            <div className="wrapper">
-                <section id='section1' className='row-content'>
-                    <a href='#section2' className='arrow__btn scroll-btn' >‹</a>
-                    <div className="item">
-                        <img src={carouselImg1} alt="Describe Image" ref={itemRef}></img>
-                    </div>
-                    <div className="item">
-                        <img src={carouselImg2} alt="Describe Image"></img>
-                    </div>
-                    <div className="item">
-                        <img src={carouselImg3} alt="Describe Image"></img>
-                    </div>
-                    <div className="item">
-                        <img src={carouselImg4} alt="Describe Image"></img>
-                    </div>
-                    <div className="item">
-                        <img src={carouselImg5} alt="Describe Image"></img>
-                    </div>
-                    <div className="item">
-                        <img src={carouselImg6} alt="Describe Image"></img>
-                    </div>
-                    <a href='#section2' className='arrow__btn scroll-btn'>›</a>
-                </section>
-                <section id='section2' className='row-content'>
-                    <a href='#section1' className='arrow__btn scroll-btn'>‹</a>
-                    <div className="item">
-                        <img src={carouselImg7} alt="Describe Image"></img>
-                    </div>
-                    <div className="item">
-                        <img src={carouselImg8} alt="Describe Image"></img>
-                    </div>
-                    <div className="item">
-                        <img src={carouselImg9} alt="Describe Image"></img>
-                    </div>
-                    <div className="item">
-                        <img src={carouselImg10} alt="Describe Image"></img>
-                    </div>
-                    <div className="item">
-                        <img src={carouselImg11} alt="Describe Image"></img>
-                    </div>
-                    <div className="item">
-                        <img src={carouselImg12} alt="Describe Image"></img>
-                    </div>
-                    <a href='#section1' className='arrow__btn scroll-btn'>›</a>
-                </section>
+            <div>
+                <h2>{props.title}</h2>
+                <div className="wrapper">
+                    <section id='section1' className='row-content'>
+                        <a className='arrow__btn scroll-btn' >‹</a>
+                        <div className="item">
+                            <img src={carouselImg1} alt="Describe Image" ref={itemRef}></img>
+                        </div>
+                        <div className="item">
+                            <img src={carouselImg2} alt="Describe Image"></img>
+                        </div>
+                        <div className="item">
+                            <img src={carouselImg3} alt="Describe Image"></img>
+                        </div>
+                        <div className="item">
+                            <img src={carouselImg4} alt="Describe Image"></img>
+                        </div>
+                        <div className="item">
+                            <img src={carouselImg5} alt="Describe Image"></img>
+                        </div>
+                        <div className="item">
+                            <img src={carouselImg6} alt="Describe Image"></img>
+                        </div>
+                        <a onClick={updateCarouselOnRight} className='arrow__btn scroll-btn'>›</a>
+                    </section>
+                    <section id='section2' className='row-content'>
+                        <a className='arrow__btn scroll-btn'>‹</a>
+                        <div className="item">
+                            <img src={carouselImg7} alt="Describe Image"></img>
+                        </div>
+                        <div className="item">
+                            <img src={carouselImg8} alt="Describe Image"></img>
+                        </div>
+                        <div className="item">
+                            <img src={carouselImg9} alt="Describe Image"></img>
+                        </div>
+                        <div className="item">
+                            <img src={carouselImg10} alt="Describe Image"></img>
+                        </div>
+                        <div className="item">
+                            <img src={carouselImg11} alt="Describe Image"></img>
+                        </div>
+                        <div className="item">
+                            <img src={carouselImg12} alt="Describe Image"></img>
+                        </div>
+                        <a onClick={updateCarouselOnRight} className='arrow__btn scroll-btn'>›</a>
+                    </section>
+                </div>
             </div>
         </>
     );
