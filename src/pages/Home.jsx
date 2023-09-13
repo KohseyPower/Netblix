@@ -38,12 +38,11 @@ export default function Home() {
                 </div>
             </div>
         </main>
-        {/* <Carousel title='New Releases'/>
+        <Carousel title='New Releases'/>
         <Carousel title='Only on Netflix'/>
         <Carousel title='Hollywood Movies'/>
         <Carousel title='Popular on Netflix'/>
-        <Carousel title='Continue Watching for USER??'/> */}
-        <Carousel/>
+        <Carousel title='Continue Watching for USER??'/>
     </>
     )
 }

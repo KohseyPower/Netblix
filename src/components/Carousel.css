@@ -81,3 +81,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
+
+.carousel-title {
+    color: rgb(219, 219, 219)
+}

@@ -20,7 +20,7 @@ import "./Carousel.css";
 // import CustomSlideInfo from './CustomSlideInfo';
 import { useState } from 'react';
 
-export default function Carousel() {
+export default function Carousel(props) {
 
     // const carouselRef = useRef();
 
@@ -35,6 +35,7 @@ export default function Carousel() {
 
     return (
         <>
+            <h2 className="carousel-title">{props.title}</h2>
             <AliceCarousel
 
                 disableDotsControls={true}
