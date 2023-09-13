@@ -1,4 +1,5 @@
-import React from 'react';
+import AliceCarousel from 'react-alice-carousel';
+import "react-alice-carousel/lib/alice-carousel.css";
 import carouselImg1 from '../img/new_releases_carousel/new_releases_carousel-img1.jpg';
 import carouselImg2 from '../img/new_releases_carousel/new_releases_carousel-img2.jpg';
 import carouselImg3 from '../img/new_releases_carousel/new_releases_carousel-img3.jpg';
@@ -15,107 +16,47 @@ import carouselImg13 from '../img/new_releases_carousel/new_releases_carousel-im
 import carouselImg14 from '../img/new_releases_carousel/new_releases_carousel-img14.jpg';
 import carouselImg15 from '../img/new_releases_carousel/new_releases_carousel-img15.jpg';
 import "./Carousel.css";
-import { useState, useEffect, useRef } from 'react';
+// import { useRef } from 'react';
+// import CustomSlideInfo from './CustomSlideInfo';
+import { useState } from 'react';
+
+export default function Carousel() {
+
+    // const carouselRef = useRef();
+
+    // const goToSlide = (index) => {
+    //     if (carouselRef.current) {
+    //         carouselRef.current.slideTo(index).slideTo(index);
+    //     }
+    // };
 
 
 
-export default function Carousel(props) {
-
-    // const [dimensions, setDimensions] = React.useState({
-    //     width: document.querySelector(".item").innerWidth,
-    //     height: document.querySelector(".item").innerHeight,
-    // });
-    // console.log(dimensions);
-    // const handleResize = () => {
-    //     setDimensions({
-    //         width: document.querySelector(".item").innerWidth,
-    //         height: document.querySelector(".item").innerHeight,
-    //     });
-    // }
-    // React.useEffect(() => {
-    //     window.addEventListener("resize", handleResize, false);
-    // }, []);
-
-
-
-    const itemRef = useRef(null);
-    const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-    const [slideMargin, setSlideMargin] = useState(0);
-
-    const handleResize = () => {
-        if (itemRef.current) {
-            const { offsetWidth, offsetHeight } = itemRef.current;
-            setDimensions({ width: offsetWidth, height: offsetHeight });
-        }
-    };
-
-    useEffect(() => {
-        // Ajoutez l'écouteur de redimensionnement au chargement du composant
-        handleResize();
-        window.addEventListener('resize', handleResize);
-        return () => {
-            // Supprimez l'écouteur de redimensionnement lors du démontage du composant
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
-
-    function updateCarouselOnRight(e) {
-        // console.log(e.target.parentElement.parentElement.parentElement);
-        setSlideMargin(slideMargin-30);  
-        e.target.parentElement.parentElement.style.transform = "translateX("+ slideMargin+ "vw)";
-    }
 
     return (
         <>
-            <div>
-                <h2>{props.title}</h2>
-                <div className="wrapper">
-                    <section id='section1' className='row-content'>
-                        <a className='arrow__btn scroll-btn' >‹</a>
-                        <div className="item">
-                            <img src={carouselImg1} alt="Describe Image" ref={itemRef}></img>
-                        </div>
-                        <div className="item">
-                            <img src={carouselImg2} alt="Describe Image"></img>
-                        </div>
-                        <div className="item">
-                            <img src={carouselImg3} alt="Describe Image"></img>
-                        </div>
-                        <div className="item">
-                            <img src={carouselImg4} alt="Describe Image"></img>
-                        </div>
-                        <div className="item">
-                            <img src={carouselImg5} alt="Describe Image"></img>
-                        </div>
-                        <div className="item">
-                            <img src={carouselImg6} alt="Describe Image"></img>
-                        </div>
-                        <a onClick={updateCarouselOnRight} className='arrow__btn scroll-btn'>›</a>
-                    </section>
-                    <section id='section2' className='row-content'>
-                        <a className='arrow__btn scroll-btn'>‹</a>
-                        <div className="item">
-                            <img src={carouselImg7} alt="Describe Image"></img>
-                        </div>
-                        <div className="item">
-                            <img src={carouselImg8} alt="Describe Image"></img>
-                        </div>
-                        <div className="item">
-                            <img src={carouselImg9} alt="Describe Image"></img>
-                        </div>
-                        <div className="item">
-                            <img src={carouselImg10} alt="Describe Image"></img>
-                        </div>
-                        <div className="item">
-                            <img src={carouselImg11} alt="Describe Image"></img>
-                        </div>
-                        <div className="item">
-                            <img src={carouselImg12} alt="Describe Image"></img>
-                        </div>
-                        <a onClick={updateCarouselOnRight} className='arrow__btn scroll-btn'>›</a>
-                    </section>
+            <AliceCarousel
+
+                disableDotsControls={true}
+                infinite={true}
+            >
+                <div className="carousel-wrapper">
+                    <img src={carouselImg1} className="sliderimg" />
+                    <img src={carouselImg2} className="sliderimg" />
+                    <img src={carouselImg3} className="sliderimg" />
+                    <img src={carouselImg4} className="sliderimg" />
+                    <img src={carouselImg5} className="sliderimg" />
+                    <img src={carouselImg6} className="sliderimg" />
                 </div>
-            </div>
+                <div className="carousel-wrapper">
+                    <img src={carouselImg7} className="sliderimg" />
+                    <img src={carouselImg8} className="sliderimg" />
+                    <img src={carouselImg9} className="sliderimg" />
+                    <img src={carouselImg10} className="sliderimg" />
+                    <img src={carouselImg11} className="sliderimg" />
+                    <img src={carouselImg12} className="sliderimg" />
+                </div>
+            </AliceCarousel >
         </>
-    );
+    )
 }
