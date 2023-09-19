@@ -8,7 +8,7 @@ import LoginScreen from "./pages/LoginScreen";
 
 
 function App() {
-    const auth = null; // Replace with your authentication logic
+    const auth = false;
 
     return (
         <div>
