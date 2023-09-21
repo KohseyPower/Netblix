@@ -32,11 +32,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #111;
+    background-color: #111111ef;
     width: 30rem;
     height: 30rem;
     margin: 1rem;
     border-radius: 0.5rem;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
 
 .signup-form-container form {
@@ -47,4 +48,42 @@
     width: 80%;
     height: 80%;
     padding: 2rem;
+}
+
+.sign-in-h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+}
+
+.sign-in-input {
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.blank-between-inputs-and-btn {
+    width: 100%;
+    height: 1.2rem;
+}
+
+.sign-in-btn {
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: #e50914;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
 }
