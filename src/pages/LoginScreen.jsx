@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './LoginScreen.css';
 import netflixLogo from '../img/netflix-logo.png';
-import { getAuth} from 'firebase/auth';
+import { auth} from '../firebase';
 
 export default function LoginScreen() {
   const emailRef = useRef(null);
@@ -9,14 +9,13 @@ export default function LoginScreen() {
 
   const signIn = (e) => {
     e.preventDefault();
-    const auth = getAuth();
 
-    auth.signInWithEmailAndPassword(emailRef.current.value, passwordRef.current.value).then((authUser) => {
+    auth
+      .signInWithEmailAndPassword(emailRef.current.value, passwordRef.current.value)
+      .then((authUser) => {
         console.log(authUser);
       })
-      .catch((error) => {
-        alert(error.message);
-      });
+      .catch((error) => alert(error.message));
   };
 
   return (
