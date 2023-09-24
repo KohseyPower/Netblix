@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navigation from './components/Navigation';
 import Home from "./pages/Home";
@@ -5,10 +6,32 @@ import TVShows from "./pages/TVShows";
 import Movies from "./pages/Movies";
 import './App.css';
 import LoginScreen from "./pages/LoginScreen";
+import { auth } from "./firebase";
+import { useDispatch, useSelector } from "react-redux";
+import { login, logout, selectUser } from "./features/userSlice";
+
 
 
 function App() {
-    const auth = false;
+    const user = useSelector(selectUser);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        const unsubscribe = auth.onAuthStateChanged(userAuth => {
+            if (userAuth) {
+                // Logged in
+                dispatch(login({
+                    uid: userAuth.uid,
+                    email: userAuth.email,
+                }));
+            } else {
+                // Logged out
+                dispatch(logout()); // Call the logout action creator
+            }
+        });
+
+        return unsubscribe;
+    }, [dispatch]); // Add dispatch as a dependency
 
     return (
         <div>
@@ -17,7 +40,7 @@ function App() {
             @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
           `}
             </style>
-            {auth ? (
+            {user ? (
                 <>
                     <Navigation />
                     <Routes>
