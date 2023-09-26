@@ -6,10 +6,19 @@
 }
 
 nav {
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--nav-background);
+    transition: background-color 0.3s ease;
+    background-color: transparent;
     color: var(--font-color);
     padding: 0 20px;
     height: var(--navbar-height);
@@ -51,7 +60,7 @@ nav ul {
     margin: 0 0.5rem 0 0.5rem;
 }
 
-.inner-link-balise{
+.inner-link-balise {
     text-decoration: none;
     color: var(--font-color);
     transition: color 0.3s ease;
