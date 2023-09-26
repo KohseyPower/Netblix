@@ -70,3 +70,8 @@ nav ul {
 .inner-link-balise:hover {
     color: var(--font-color-hover);
 }
+
+.left-nav {
+    display: flex;
+    align-items: center;
+}
