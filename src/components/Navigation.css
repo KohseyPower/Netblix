@@ -1,6 +1,6 @@
 :root {
     --nav-background: #121315;
-    --font-color: rgba(248, 247, 247, 0.8);
+    --font-color: rgb(248, 247, 247);
     --font-color-hover: rgba(189, 189, 189, 0.65);
     --navbar-height: 4.2rem;
 }
@@ -84,3 +84,4 @@ nav ul {
     display: flex;
     align-items: center;
 }
+
