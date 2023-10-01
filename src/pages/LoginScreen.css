@@ -87,3 +87,19 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+.signup-text {
+    color: grey;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 80%;
+    height: 80%;
+    padding: 0rem 2rem 2rem 2rem;
+}
+
+.signup-link {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}

@@ -1,9 +1,8 @@
 :root {
     --profile-background: #121315de;
-
 }
 
-.profile-container{
+.profile-container {
     position: absolute;
     width: 100%;
 }
@@ -17,7 +16,7 @@
     align-items: center;
     justify-content: center;
     /* in building, profile component should be align to profile account icon */
-    margin: 0.5rem 1.7rem 1rem 1rem; 
+    margin: 0.5rem 1.7rem 1rem 1rem;
     /* padding-right: 1rem;
     padding-left: 1rem; */
     border: 1px solid var(--font-color);
@@ -27,10 +26,18 @@
     color: var(--font-color);
 }
 
-.lower-profile{
+.lower-profile {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-top: 1px solid var(--font-color);
+}
+
+.option {
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
 }
