@@ -1,7 +1,11 @@
+:root {
+    --slider-button-height: 2rem;
+    --slider-button-width: 2rem;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 100%);
-
     overflow: hidden;
     scroll-behavior: smooth;
     /* width: 100vw; */
@@ -19,7 +23,6 @@
         opacity: 0;
         transform: scale(0.9);
     }
-
     100% {
         opacity: 1;
         transform: scale(1);
@@ -73,6 +76,7 @@
     padding: 0.25vw;
 }
 
+
 /* .alice-carousel__stage-item.__active {
     margin: 0.25vw;
 } */
@@ -84,4 +88,41 @@
 
 .carousel-title {
     color: rgb(219, 219, 219)
+}
+
+.alice-carousel-prev-button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 0 1rem 1rem 0;
+    color: white;
+    padding: 2rem;
+    cursor: pointer;
+    z-index: 1;
+    height: 100%;
+}
+
+.alice-carousel-next-button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 1rem 0 0 1rem;
+    color: white;
+    padding: 2rem;
+    cursor: pointer;
+    z-index: 1;
+    height: 100%;
+}
+
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+    display: block;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0;
 }

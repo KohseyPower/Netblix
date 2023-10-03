@@ -40,6 +40,16 @@ export default function Carousel(props) {
 
                 disableDotsControls={true}
                 infinite={true}
+
+                renderPrevButton={() => {
+                    return <div className="alice-carousel-prev-button">&lt;</div>
+                }}
+                renderNextButton={() => {
+                    return <div className="alice-carousel-next-button">&gt;</div>
+                }}
+
+
+
             >
                 <div className="carousel-wrapper">
                     <img src={carouselImg1} className="sliderimg" />
