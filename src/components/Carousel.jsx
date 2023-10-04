@@ -42,10 +42,10 @@ export default function Carousel(props) {
                 infinite={true}
 
                 renderPrevButton={() => {
-                    return <div className="alice-carousel-prev-button">&lt;</div>
+                    return <div className="alice-carousel-prev-button"> </div>
                 }}
                 renderNextButton={() => {
-                    return <div className="alice-carousel-next-button">&gt;</div>
+                    return <div className="alice-carousel-next-button"> </div>
                 }}
 
 

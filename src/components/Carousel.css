@@ -95,14 +95,64 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    display: flex;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 0 1rem 1rem 0;
     color: white;
+    font-size: 2rem;
     padding: 2rem;
     cursor: pointer;
     z-index: 1;
-    height: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alice-carousel-prev-button:hover {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 1rem 1rem 0;
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    cursor: pointer;
+    z-index: 1;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alice-carousel-prev-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 40%;
+    height: 0.3rem;
+    /* Adjust the height to control the "open" part */
+    background-color: white;
+    /* Change the color as desired */
+    transform: rotate(-50deg) translateY(-0.9rem) translateX(-0.35rem);
+    z-index: -1;
+}
+
+.alice-carousel-prev-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 40%;
+    height: 0.3rem;
+    /* Adjust the height to control the "open" part */
+    background-color: white;
+    /* Change the color as desired */
+    transform: rotate(50deg) translateY(-0.7rem) translateX(1.5rem);
+    z-index: -1;
 }
 
 .alice-carousel-next-button {
@@ -110,13 +160,63 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 1rem 0 0 1rem;
     color: white;
+    font-size: 2rem;
     padding: 2rem;
     cursor: pointer;
     z-index: 1;
-    height: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alice-carousel-next-button:hover {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem 0 0 1rem;
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    cursor: pointer;
+    z-index: 1;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alice-carousel-next-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 40%;
+    height: 0.3rem;
+    /* Adjust the height to control the "open" part */
+    background-color: white;
+    /* Change the color as desired */
+    transform: rotate(50deg) translateY(-0.9rem) translateX( 0.35rem);
+    z-index: -1;
+}
+
+.alice-carousel-next-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 40%;
+    height: 0.3rem;
+    /* Adjust the height to control the "open" part */
+    background-color: white;
+    /* Change the color as desired */
+    transform: rotate(-50deg) translateY(-0.7rem) translateX(-1.5rem);
+    z-index: -1;
 }
 
 .alice-carousel__prev-btn,
