@@ -32,7 +32,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #111111ef;
+    background-color: #000000b6;
     width: 30rem;
     height: 30rem;
     margin: 1rem;
@@ -102,4 +102,18 @@
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
+}
+
+.sign-up-now:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.signup-link-learn-more {
+    color: #0162c0;
+}
+
+.signup-link-learn-more:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }

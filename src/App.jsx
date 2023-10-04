@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import Home from "./pages/Home";
 import TVShows from "./pages/TVShows";
 import Movies from "./pages/Movies";
+import SignUp from "./pages/SignUp";
 import './App.css';
 import LoginScreen from "./pages/LoginScreen";
 import { auth } from "./firebase";
@@ -52,6 +53,7 @@ function App() {
             ) : (
                 <Routes>
                     <Route path="/Netblix" element={<LoginScreen />} />
+                    <Route path="/signup" element={<SignUp />} />
                 </Routes>
             )}
         </div>

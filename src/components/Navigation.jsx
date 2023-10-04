@@ -2,7 +2,7 @@ import './Navigation.css';
 import netblixLogo from "../img/netflix-logo.png";
 import { Link } from "react-router-dom";
 import profileAccount from "../img/profile-account.png";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect} from "react";
 import Profile from "./Profile";
 
 export default function Navigation() {

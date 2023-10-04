@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import './LoginScreen.css';
 import netflixLogo from '../img/netflix-logo.png';
 import { auth } from '../firebase';
+import { Link } from "react-router-dom";
+
 
 export default function LoginScreen() {
   const emailRef = useRef(null);
@@ -37,10 +39,13 @@ export default function LoginScreen() {
             </form>
             <div className="signup-text">
               <p>
-                New to Netflix? <span className="signup-link">Sign up now.</span>
+                New to Netflix? <span className="signup-link">
+                  <a class="sign-up-now"  >< Link to="/signup" style={{ textDecoration: 'none', color:'white'}} >
+                    Sign up now
+                  </Link ></a></span>. {/* go to page Signup*/}
               </p>
               <p>
-                This page is protected by Google reCAPTCHA to ensure you're not a bot. <span className="signup-link">Learn more.</span>
+                This page is protected by Google reCAPTCHA to ensure you're not a bot. <span className="signup-link signup-link-learn-more">Learn more.</span>
               </p>
             </div>
           </div>
