@@ -45,14 +45,14 @@ function App() {
                 <>
                     <Navigation />
                     <Routes>
-                        <Route path="/Netblix" element={<Home />} />
+                        <Route path="/" element={<Home />} />
                         <Route path="/tvshows" element={<TVShows />} />
                         <Route path="/movies" element={<Movies />} />
                     </Routes>
                 </>
             ) : (
                 <Routes>
-                    <Route path="/Netblix" element={<LoginScreen />} />
+                    <Route path="/" element={<LoginScreen />} />
                     <Route path="/signup" element={<SignUp />} />
                 </Routes>
             )}
