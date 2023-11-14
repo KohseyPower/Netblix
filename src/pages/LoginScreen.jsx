@@ -17,7 +17,7 @@ export default function LoginScreen() {
       .then((authUser) => {
         console.log(authUser);
       })
-      .catch((error) => alert(error.message));
+      .catch((error) => document.querySelector(".sign-in-error-container").innerHTML = "<p><b>Invalid email or password.</b> Please try again or create a new account.<\p>");
   };
 
   return (
@@ -30,17 +30,20 @@ export default function LoginScreen() {
           <div className="signup-form-container">
             <form>
               <h1 class="sign-in-h1">Sign In</h1>
+              <div className="sign-in-error-container">
+              </div>
               <input className="sign-in-input" ref={emailRef} placeholder="Email" type="email" />
               <input className="sign-in-input" ref={passwordRef} placeholder="Password" type="password" />
               <div className="blank-between-inputs-and-btn"></div>
               <button className="sign-in-btn" type="button" onClick={signIn}>
                 Sign In
               </button>
+
             </form>
             <div className="signup-text">
               <p>
                 New to Netflix? <span className="signup-link">
-                  <a class="sign-up-now"  >< Link to="/signup" style={{ textDecoration: 'none', color:'white'}} >
+                  <a class="sign-up-now"  >< Link to="/signup" style={{ textDecoration: 'none', color: 'white' }} >
                     Sign up now
                   </Link ></a></span>. {/* go to page Signup*/}
               </p>

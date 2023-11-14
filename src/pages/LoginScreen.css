@@ -117,3 +117,17 @@
     text-decoration: underline;
     cursor: pointer;
 }
+
+
+/* -------------ERROR MESSAGE----------------- */
+
+.sign-in-error-container {
+    background-color: #e87c03;
+    color: white;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+}
+
+.sign-in-error-container>p {
+    margin: 1rem;
+}
